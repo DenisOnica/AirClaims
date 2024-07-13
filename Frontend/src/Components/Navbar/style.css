@@ -1,6 +1,23 @@
+.navBar {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.navBar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navBar.relative {
+  position: relative;
+}
+
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .menu.open {

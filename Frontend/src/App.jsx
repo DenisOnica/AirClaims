@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import NavBar from "./Components/Navbar";
-import Home from "./Pages/Home/Home";
+
 import About from "./Pages/About/About";
 import Aplica from "./Pages/Aplica/Aplica";
 import Drepturi from "./Pages/Drepturi/Drepturi";
 import Contact from "./Pages/Contact/Contact";
+import Home from "./Pages/Home/Home";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/aplica" element={<Aplica />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
